@@ -1,3 +1,46 @@
+# Overview
+
+You've learned in class how to use Next.js to create production ready website. Now is the chance to get your hands dirty and practice.
+You will create a website that shows the posts from a fake api.
+
+```jsx
+API_URL = https://dummyjson.com/posts;      // This gives you all the posts
+API_URL = https://dummyjson.com/posts/1     // This gives you the first post
+
+```
+
+## Instructions
+
+0. Make sure that you fork the Github repo first and give access to your teammate.
+1. First you will need to install everything with `npm install` so you can use the project.
+2. In addition to the index page in the `page` folder, create 3 pages:
+   1. About us page that will contain your team's names (/about/index.jsx)
+   2. A posts page that shows the list of all posts (/posts/index.jsx)
+   3. Dynamic posts page. This page will be used to show posts in it. (/posts/[pid].jsx)
+3. Create a `Navbar` component and add links to take the user to Home, Posts, and About pages
+4. The posts page should use the `getStaticProps` function to get the data and pass it to the page as props. The data will be coming from the API endpoint above. Style the posts list in any way you want as long as you add a `Read more` link that takes the user to that page.
+5. If a user clicks on a `Read more` link it should take them to a dyanmic routed page (/posts/[pid].jsx) that will use the `getStaticProps` and as a **BONUS** `getStaticPath` function to pregenerate all the pages.
+6. As per usual, styling is up to you. So use whatever method that suits you like tailwindcss for example.
+
+## Development
+
+To run the webapp while developing, make sure to run `npm run dev` to start the development server.
+
+## Deployment
+
+After you're done, build the webapp with `npm build` and then run it with `npm start`. Notice how fast the website runs after building it.
+
+## Useful links
+
+[Routing in Next.js](https://nextjs.org/docs/routing/introduction)
+
+[getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props)
+
+[getStaticPath](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths)
+
+
+### NEXTJS DEFAULT README
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
