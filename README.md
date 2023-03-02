@@ -38,6 +38,7 @@ After you're done, build the webapp with `npm build` and then run it with `npm s
 
 [getStaticPath](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths)
 
+* * *
 
 ### NEXTJS DEFAULT README
 
